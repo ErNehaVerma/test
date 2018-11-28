@@ -1,5 +1,9 @@
 <?php
 
+use App\User;
+use App\Coupon;
+use Illuminate\Http\Request;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,5 +16,24 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $coupons = Coupon::get()->load('category');
+    return view('welcome', compact('coupons'));
 });
+
+Route::post('filter', function (Request $request) {
+    $coupons = Coupon::whereCategoryId($request->cat_id)->get()->load('category');
+    return view('welcome', compact('coupons'));
+});
+
+Route::get('showimage/{name}', function ($name) {
+    return response()->file(storage_path('/app/public/'.$name));
+});
+
+Auth::routes();
+
+Route::get('home', 'HomeController@index')->name('home');
+Route::get('users', 'CouponController@seeUsers');
+Route::resource('coupons', 'CouponController');
+Route::resource('category', 'CouponCategoryController');
+
+

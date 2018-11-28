@@ -1,0 +1,82 @@
+.form-horizontal .control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: left;
+}
+.box-header.with-border {
+    border-bottom: 1px solid #3c8dbc;
+    background-color: #3c8dbc;
+}
+.scrollbar {
+
+overflow-x: auto; 
+padding-bottom:10px;
+}
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+    border: 1px solid #d2d1d1!important;
+}
+td {
+    font-weight: normal;
+}
+.table{
+    background-color:white;
+}
+thead{
+background-color:#EAE9E9;
+}
+#newform .col-sm-2.control-label.required {
+    margin-left: 31px;
+    margin-right: -37px;
+}
+.skin-blue .main-header .logo {
+    background-color: #e25754 !important;
+}
+.skin-blue .main-header .navbar {
+    background-color: #e25754 !important;
+}
+.skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
+    background-color: #2a3143 !important;
+}
+.skin-blue .sidebar-menu>li:hover>a, .skin-blue .sidebar-menu>li.active>a {
+    color: #e25754 !important;
+    background: #ffffff !important;
+    border: none !important;
+    margin-left: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    border-top-left-radius: 10px !important;
+}
+.content-wrapper, .right-side {
+    background-color: #ffffff;
+}
+.skin-blue .sidebar a {
+    color: #ffffff !important;
+}
+.skin-blue .treeview-menu>li>a {
+    color: #ffffff !important;
+}
+.skin-blue .sidebar-menu>li>.treeview-menu {
+    margin: 0 1px !important;
+    background: #192034 !important;
+    border-right: 2px solid #e25754 !important;
+    margin-left: 10px !important;
+    border-bottom-left-radius: 10px !important;
+}
+.skin-blue .treeview-menu>li.active>a, .skin-blue .treeview-menu>li>a:hover {
+    color: #e25754 !important;
+}
+.box-header.with-border {
+    border-bottom: 1px solid #dddddd;
+    background-color: #edeef3;
+}
+.table.table-bordered {
+    border-top: 2px solid #e25754;
+}
+.skin-blue .main-header .logo:hover {
+    background-color: #ff6461 !important;
+}
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+    background-color: #ff6461 !important;
+}
+.box.box-info {
+    border-top-color: #e25754 !important;
+}
